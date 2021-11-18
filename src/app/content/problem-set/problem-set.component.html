@@ -1,0 +1,101 @@
+<div fxLayoutGap="10px" class="filter">
+  <mat-form-field fxFlex="12%">
+    <mat-label>Lists</mat-label>
+    <mat-select>
+      <mat-option value="list-1"> LeetCode Curated Algo 170</mat-option>
+      <mat-option value="list-2">LeetCode Curated SQL 70</mat-option>
+      <mat-option value="list-3"> Top 100 Liked Questions</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Difficulty</mat-label>
+    <mat-select>
+      <mat-option value="easy"> Easy </mat-option>
+      <mat-option value="easy"> Medium </mat-option>
+      <mat-option value="easy"> Hard </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Status</mat-label>
+    <mat-select>
+      <mat-option value="todo"> ToDo </mat-option>
+      <mat-option value="solved"> Solved </mat-option>
+      <mat-option value="attempted"> Attempted </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Tag</mat-label>
+    <mat-select multiple>
+      <mat-option value="array"> Array </mat-option>
+      <mat-option value="string"> String </mat-option>
+      <mat-option value="tree"> Tree </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field floatLabel="never">
+    <input
+      matInput
+      type="text"
+      (keyup)="doFilter($event)"
+      placeholder="Search questions"
+    />
+    <span style="color: gray" matPrefix><mat-icon>search</mat-icon></span>
+  </mat-form-field>
+  <button mat-icon-button><mat-icon>settings</mat-icon></button>
+  <button mat-icon-button>
+    <mat-icon>shuffle</mat-icon> <span style="color: blue"> Pick One</span>
+  </button>
+</div>
+
+<div class="table-info">
+  <mat-table [dataSource]="dataSource" matSort>
+    <!-- Status Column class="mat-elevation-z8"-->
+    <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{ element.status }}</mat-cell>
+    </ng-container>
+    <!-- Title Column -->
+    <ng-container matColumnDef="problem_id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Title</mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        {{ element.problem_id }} {{ element.title }}
+      </mat-cell>
+    </ng-container>
+    <!-- Solution Column -->
+    <ng-container matColumnDef="solution">
+      <mat-header-cell *matHeaderCellDef>Solution</mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <mat-icon>description</mat-icon>
+      </mat-cell>
+    </ng-container>
+    <!-- Acceptance Column -->
+    <ng-container matColumnDef="acceptance">
+      <mat-header-cell *matHeaderCellDef mat-sort-header
+        >Acceptance</mat-header-cell
+      >
+      <mat-cell *matCellDef="let element"
+        >{{ element.acceptance | number }}%</mat-cell
+      >
+    </ng-container>
+    <!-- Difficulty Column -->
+    <ng-container matColumnDef="difficulty">
+      <mat-header-cell *matHeaderCellDef mat-sort-header
+        >Difficulty</mat-header-cell
+      >
+      <mat-cell *matCellDef="let element">{{ element.difficulty }}</mat-cell>
+    </ng-container>
+    <!-- Frequency Column -->
+    <ng-container matColumnDef="frequency">
+      <mat-header-cell *matHeaderCellDef mat-sort-header
+        >Frequency</mat-header-cell
+      >
+      <mat-cell *matCellDef="let element"><mat-icon>lock</mat-icon></mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+  <mat-paginator [pageSize]="1" [pageSizeOptions]="[1, 5, 10, 20]">
+  </mat-paginator>
+</div>
