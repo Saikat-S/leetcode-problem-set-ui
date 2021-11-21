@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const material = [
   MatButtonModule,
@@ -22,7 +25,10 @@ const material = [
   FormsModule,
   MatPaginatorModule,
   MatSelectModule,
-  MatInputModule
+  MatInputModule,
+  MatCardModule,
+  ScrollingModule,
+  MatExpansionModule
 ]
 
 @NgModule({

@@ -1,0 +1,54 @@
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+strong {
+  font-weight: 500;
+}
+.navigation-items {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+.problem-details {
+  overflow-y: scroll;
+  height: 520px;
+}
+.icon {
+  font-size: 17px;
+}
+
+mat-card-title {
+  font-size: 20px;
+}
+mat-card-subtitle {
+  font-size: 12px;
+}
+
+.problem-details-footer,
+.problem-details-footer p {
+  color: gray;
+  text-align: left;
+  font-size: 12px;
+}
+.problem-details-footer p {
+  color: rgba(0, 0, 0, 0.7);
+}
+mat-panel-title {
+  color: gray;
+  font-size: 13px;
+}
+mat-panel-title:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+.example-card {
+  max-width: 95%;
+}
+
+.footer-problems {
+  color: gray;
+  /*position: absolute;
+  bottom: 10px;
+  left: 10px;*/
+}
