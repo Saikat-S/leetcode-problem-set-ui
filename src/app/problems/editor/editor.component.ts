@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editor.component.css']
 })
 export class EditorComponent implements OnInit {
-
+  btn = "{ }";
+  languages = ['C', 'C++', 'C#', 'JavaScript', 'Python'];
   constructor() { }
 
   ngOnInit(): void {

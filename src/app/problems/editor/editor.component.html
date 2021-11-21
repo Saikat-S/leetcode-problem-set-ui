@@ -1,1 +1,43 @@
-<p>editor works!</p>
+<div class="editor-top" fxLayout>
+  <mat-form-field>
+    <mat-select value="C++">
+      <mat-option *ngFor="let language of languages" [value]="language">
+        {{ language }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-button fxLayoutGap="200px">Autocomplete</button>
+
+  <button mat-icon-button><mat-icon> format_italic</mat-icon></button>
+  <button mat-icon-button><mat-icon>code</mat-icon></button>
+  <button mat-icon-button><mat-icon>replay</mat-icon></button>
+  <button mat-icon-button><mat-icon>settings</mat-icon></button>
+  <button mat-icon-button><mat-icon>fullscreen</mat-icon></button>
+</div>
+<div>
+  <textarea
+    matInput
+    class="editor"
+    value="class Solution {
+    public:
+        vector<int> twoSum(vector<int>& nums, int target) {
+            
+        }
+    };"
+  ></textarea>
+</div>
+<footer class="footer-editor" fxLayout>
+  <div fxFlex>
+    <button mat-button>Console <mat-icon>arrow_drop_down</mat-icon></button>
+    <button mat-button>Contribute <i>i</i></button>
+  </div>
+  <div fxFlexAlign="flex-end">
+    <button mat-raised-button style="color: gray">
+      <mat-icon>arrow_right</mat-icon> Run Code
+      <mat-icon style="font-size: 20px">expand_less</mat-icon>
+    </button>
+    <button mat-raised-button style="background-color: #455a64; color: white">
+      Submit
+    </button>
+  </div>
+</footer>

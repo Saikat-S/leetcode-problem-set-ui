@@ -13,7 +13,7 @@ strong {
 }
 .problem-details {
   overflow-y: scroll;
-  height: 520px;
+  height: 500px;
 }
 .icon {
   font-size: 17px;
@@ -48,7 +48,8 @@ mat-panel-title:hover {
 
 .footer-problems {
   color: gray;
-  /*position: absolute;
+  padding: 10px;
+  /*position: relative;
   bottom: 10px;
   left: 10px;*/
 }

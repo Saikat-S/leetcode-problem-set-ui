@@ -11,7 +11,8 @@
         <mat-icon style="font-size: small; color: rgb(204, 167, 102)">
           lock</mat-icon
         >
-        Solution</a
+        Solution
+        <mat-icon style="font-size: small">play_circle_outline</mat-icon></a
       >
     </li>
     <li>
@@ -81,9 +82,9 @@
         <strong>Constraints:</strong>
       </p>
       <ul>
-        <li>2 <= nums.length <= 104</li>
-        <li>-109 <= nums[i] <= 109</li>
-        <li>109 <= target <= 109</li>
+        <li>2 <= nums.length <= 10<sup>4</sup></li>
+        <li>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></li>
+        <li>10<sup>9</sup> <= target <= 10<sup>9</sup></li>
         <li><strong> Only one valid answer exists.</strong></li>
       </ul>
       <p>
@@ -166,9 +167,17 @@
 </section>
 
 <footer class="footer-problems" fxLayout>
-  <button fxLayoutGap="200px" mat-button>Problems</button>
-  <button mat-button><mat-icon>shuffle</mat-icon>Pick One</button>
-  <button mat-button disabled>Prev</button>
-  <button mat-button>1/2077</button>
-  <button mat-button>Next</button>
+  <div fxFlex>
+    <button mat-raised-button style="color: gray">
+      <mat-icon>list</mat-icon> Problems
+    </button>
+  </div>
+  <div fxFlexAlign="flex-end">
+    <button mat-raised-button style="color: gray">
+      <mat-icon>shuffle</mat-icon> Pick One
+    </button>
+    <button mat-button disabled>Prev</button>
+    <button mat-button>1/2077</button>
+    <button mat-button>Next</button>
+  </div>
 </footer>
