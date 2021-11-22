@@ -13,13 +13,14 @@ a:hover {
 
 .filter-box {
   max-width: 100px;
-  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.table-info {
+  padding: 10px 75px 10px 75px;
 }
 
 mat-table {
   overflow-x: scroll;
-  min-width: 1000px;
-  display: block;
-  box-sizing: border-box;
-  padding: 10px 75px 10px 75px;
+  min-width: 650px;
 }

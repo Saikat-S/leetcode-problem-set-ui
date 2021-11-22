@@ -1,51 +1,53 @@
 <div fxLayout class="filter">
-  <div fxLayoutGap="20px">
-    <mat-form-field class="filter-box">
-      <mat-label>Lists</mat-label>
-      <mat-select>
-        <mat-option value="list-1"> LeetCode Curated Algo 170</mat-option>
-        <mat-option value="list-2">LeetCode Curated SQL 70</mat-option>
-        <mat-option value="list-3"> Top 100 Liked Questions</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field class="filter-box">
-      <mat-label>Difficulty</mat-label>
-      <mat-select>
-        <mat-option value="easy"> Easy </mat-option>
-        <mat-option value="easy"> Medium </mat-option>
-        <mat-option value="easy"> Hard </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field class="filter-box">
-      <mat-label>Status</mat-label>
-      <mat-select>
-        <mat-option value="todo"> ToDo </mat-option>
-        <mat-option value="solved"> Solved </mat-option>
-        <mat-option value="attempted"> Attempted </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field class="filter-box">
-      <mat-label>Tag</mat-label>
-      <mat-select multiple>
-        <mat-option value="array"> Array </mat-option>
-        <mat-option value="string"> String </mat-option>
-        <mat-option value="tree"> Tree </mat-option>
-      </mat-select>
-    </mat-form-field>
+  <div fxLayoutAlign="flex-start">
+    <div fxLayoutGap="10px">
+      <mat-form-field class="filter-box">
+        <mat-label>Lists</mat-label>
+        <mat-select>
+          <mat-option value="list-1"> LeetCode Curated Algo 170</mat-option>
+          <mat-option value="list-2">LeetCode Curated SQL 70</mat-option>
+          <mat-option value="list-3"> Top 100 Liked Questions</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="filter-box">
+        <mat-label>Difficulty</mat-label>
+        <mat-select>
+          <mat-option value="easy"> Easy </mat-option>
+          <mat-option value="easy"> Medium </mat-option>
+          <mat-option value="easy"> Hard </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="filter-box">
+        <mat-label>Status</mat-label>
+        <mat-select>
+          <mat-option value="todo"> ToDo </mat-option>
+          <mat-option value="solved"> Solved </mat-option>
+          <mat-option value="attempted"> Attempted </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="filter-box">
+        <mat-label>Tag</mat-label>
+        <mat-select multiple>
+          <mat-option value="array"> Array </mat-option>
+          <mat-option value="string"> String </mat-option>
+          <mat-option value="tree"> Tree </mat-option>
+        </mat-select>
+      </mat-form-field>
 
-    <mat-form-field fxFlex="100" class="filter-box" floatLabel="never">
-      <input
-        matInput
-        type="text"
-        (keyup)="doFilter($event)"
-        placeholder="Search questions"
-      />
-      <span style="color: gray" matPrefix><mat-icon>search</mat-icon></span>
-    </mat-form-field>
-    <button mat-icon-button class="filter-box">
-      <mat-icon>settings</mat-icon>
-    </button>
-    <div>
+      <mat-form-field fxFlex="100" class="filter-box" floatLabel="never">
+        <input
+          matInput
+          type="text"
+          (keyup)="doFilter($event)"
+          placeholder="Search questions"
+        />
+        <span style="color: gray" matPrefix><mat-icon>search</mat-icon></span>
+      </mat-form-field>
+      <button mat-icon-button class="filter-box">
+        <mat-icon>settings</mat-icon>
+      </button>
+    </div>
+    <div fxFlex>
       <button mat-icon-button>
         <mat-icon>shuffle</mat-icon> <span style="color: blue"> Pick One</span>
       </button>
