@@ -1,183 +1,190 @@
-<nav class="nav-bar">
-  <ul fxLayout fxLayoutGap="50px" class="navigation-items">
-    <li>
-      <a href="#"
-        ><mat-icon style="font-size: small">description</mat-icon>
-        Description</a
-      >
-    </li>
-    <li>
-      <a href="#">
-        <mat-icon style="font-size: small; color: rgb(204, 167, 102)">
-          lock</mat-icon
+<div class="container">
+  <nav class="nav-bar">
+    <ul fxLayout fxLayoutGap="50px" class="navigation-items">
+      <li>
+        <a href="#"
+          ><mat-icon style="font-size: small">description</mat-icon>
+          Description</a
         >
-        Solution
-        <mat-icon style="font-size: small">play_circle_outline</mat-icon></a
-      >
-    </li>
-    <li>
-      <a href="#"
-        ><mat-icon style="font-size: small">question_answer</mat-icon>
-        Discuss</a
-      >
-    </li>
-    <li>
-      <a href="#"
-        ><mat-icon style="font-size: small">query_builder</mat-icon>
-        Submissions</a
-      >
-    </li>
-  </ul>
-</nav>
-<section class="problem-details">
-  <mat-card class="example-card">
-    <mat-card-title>1. Two Sum</mat-card-title>
-    <mat-card-subtitle>
-      <span style="padding-right: 10px; color: green">Easy</span>
-      <button mat-button>
-        <mat-icon class="icon">thumb_up_alt</mat-icon> 26417
-      </button>
-      <button mat-button>
-        <mat-icon class="icon">thumb_down_alt</mat-icon> 883
-      </button>
-      <button mat-button>
-        <mat-icon class="icon">favorite_border</mat-icon> Add to List
-      </button>
-      <button mat-button><mat-icon class="icon">share</mat-icon> Share</button>
-    </mat-card-subtitle>
-    <mat-card-content>
-      <p>
-        Given an array of integers nums and an integer target, return indices of
-        the two numbers such that they add up to target.
-      </p>
-      <p>
-        You may assume that each input would have exactly one solution, and you
-        may not use the same element twice.
-      </p>
-      <p>You can return the answer in any order.</p>
-      <p>
-        <strong> Example 1:</strong>
-      </p>
-      <p>
-        <strong>Input:</strong> nums = [2,7,11,15], target = 9 <br />
-        <strong>Output:</strong> [0,1] <br />
-        <strong>Output:</strong> Because nums[0] + nums[1] == 9, we return [0,
-        1].
-      </p>
-      <p>
-        <strong> Example 2:</strong>
-      </p>
-      <p>
-        <strong>Input:</strong>nums = [3,2,4], target = 6 <br />
-        <strong>Output:</strong>[1,2] <br />
-      </p>
-      <p>
-        <strong> Example 3:</strong>
-      </p>
-      <p>
-        <strong>Input:</strong>nums = [3,3], target = 6 <br />
-        <strong>Output:</strong>[0,1] <br />
-      </p>
-      <p>
-        <strong>Constraints:</strong>
-      </p>
-      <ul>
-        <li>2 <= nums.length <= 10<sup>4</sup></li>
-        <li>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></li>
-        <li>10<sup>9</sup> <= target <= 10<sup>9</sup></li>
-        <li><strong> Only one valid answer exists.</strong></li>
-      </ul>
-      <p>
-        <strong>Follow-up:</strong> Can you come up with an algorithm that is
-        less than O(n2) time complexity?
-      </p>
-    </mat-card-content>
-    <mat-card-footer class="problem-details-footer">
-      <p>
-        <span style="padding: 18px"
-          >Accepted <span style="color: black">5,357,602</span></span
+      </li>
+      <li>
+        <a href="#">
+          <mat-icon style="font-size: small; color: rgb(204, 167, 102)">
+            lock</mat-icon
+          >
+          Solution
+          <mat-icon style="font-size: small">play_circle_outline</mat-icon></a
         >
-        <span style="padding: 18px"
-          >Submissions <span style="color: black">11,192,154</span></span
+      </li>
+      <li>
+        <a href="#"
+          ><mat-icon style="font-size: small">question_answer</mat-icon>
+          Discuss</a
         >
-      </p>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Companies</mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Premium users can access company and interview frequency data</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Rated Topics</mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Array Hash Table</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Similiar Questions</mat-panel-title>
-        </mat-expansion-panel-header>
+      </li>
+      <li>
+        <a href="#"
+          ><mat-icon style="font-size: small">query_builder</mat-icon>
+          Submissions</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <div class="problem-details">
+    <mat-card class="example-card">
+      <mat-card-title>1. Two Sum</mat-card-title>
+      <mat-card-subtitle>
+        <span style="padding-right: 10px; color: green">Easy</span>
+        <button mat-button>
+          <mat-icon class="icon">thumb_up_alt</mat-icon> 26417
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">thumb_down_alt</mat-icon> 883
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">favorite_border</mat-icon> Add to List
+        </button>
+        <button mat-button>
+          <mat-icon class="icon">share</mat-icon> Share
+        </button>
+      </mat-card-subtitle>
+      <mat-card-content>
         <p>
-          <a href="#">3Sum</a> <span style="padding-left: 85%">Medium</span>
-        </p>
-        <p><a href="#">4Sum</a><span style="padding-left: 85%">Medium</span></p>
-        <p>
-          <a href="#">Two Sum II - Input Array Is Sorted</a>
-          <span style="padding-left: 85%">Easy</span>
+          Given an array of integers nums and an integer target, return indices
+          of the two numbers such that they add up to target.
         </p>
         <p>
-          <a href="#">Two Sum III - Data structure design</a>
-          <span style="padding-left: 85%">Easy</span>
+          You may assume that each input would have exactly one solution, and
+          you may not use the same element twice.
         </p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Show Hint 1</mat-panel-title>
-        </mat-expansion-panel-header>
+        <p>You can return the answer in any order.</p>
         <p>
-          A really brute force way would be to search for all possible pairs of
-          numbers but that would be too slow. Again, it's best to try out brute
-          force solutions for just for completeness. It is from these brute
-          force solutions that you can come up with optimizations.
+          <strong> Example 1:</strong>
         </p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Show Hint 2</mat-panel-title>
-        </mat-expansion-panel-header>
         <p>
-          So, if we fix one of the numbers, say x , we have to scan the entire
-          array to find the next number y which is value - x where value is the
-          input parameter. Can we change our array somehow so that this search
-          becomes faster?
+          <strong>Input:</strong> nums = [2,7,11,15], target = 9 <br />
+          <strong>Output:</strong> [0,1] <br />
+          <strong>Output:</strong> Because nums[0] + nums[1] == 9, we return [0,
+          1].
         </p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Show Hint 3</mat-panel-title>
-        </mat-expansion-panel-header>
         <p>
-          The second train of thought is, without changing the array, can we use
-          additional space somehow? Like maybe a hash map to speed up the
-          search?
+          <strong> Example 2:</strong>
         </p>
-      </mat-expansion-panel>
-    </mat-card-footer>
-  </mat-card>
-</section>
+        <p>
+          <strong>Input:</strong>nums = [3,2,4], target = 6 <br />
+          <strong>Output:</strong>[1,2] <br />
+        </p>
+        <p>
+          <strong> Example 3:</strong>
+        </p>
+        <p>
+          <strong>Input:</strong>nums = [3,3], target = 6 <br />
+          <strong>Output:</strong>[0,1] <br />
+        </p>
+        <p>
+          <strong>Constraints:</strong>
+        </p>
+        <ul>
+          <li>2 <= nums.length <= 10<sup>4</sup></li>
+          <li>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></li>
+          <li>10<sup>9</sup> <= target <= 10<sup>9</sup></li>
+          <li><strong> Only one valid answer exists.</strong></li>
+        </ul>
+        <p>
+          <strong>Follow-up:</strong> Can you come up with an algorithm that is
+          less than O(n2) time complexity?
+        </p>
+      </mat-card-content>
+      <mat-card-footer class="problem-details-footer">
+        <p>
+          <span style="padding: 18px"
+            >Accepted <span style="color: black">5,357,602</span></span
+          >
+          <span style="padding: 18px"
+            >Submissions <span style="color: black">11,192,154</span></span
+          >
+        </p>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Companies</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>Premium users can access company and interview frequency data</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Rated Topics</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>Array Hash Table</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Similiar Questions</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            <a href="#">3Sum</a> <span style="padding-left: 85%">Medium</span>
+          </p>
+          <p>
+            <a href="#">4Sum</a><span style="padding-left: 85%">Medium</span>
+          </p>
+          <p>
+            <a href="#">Two Sum II - Input Array Is Sorted</a>
+            <span style="padding-left: 85%">Easy</span>
+          </p>
+          <p>
+            <a href="#">Two Sum III - Data structure design</a>
+            <span style="padding-left: 85%">Easy</span>
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Show Hint 1</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            A really brute force way would be to search for all possible pairs
+            of numbers but that would be too slow. Again, it's best to try out
+            brute force solutions for just for completeness. It is from these
+            brute force solutions that you can come up with optimizations.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Show Hint 2</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            So, if we fix one of the numbers, say x , we have to scan the entire
+            array to find the next number y which is value - x where value is
+            the input parameter. Can we change our array somehow so that this
+            search becomes faster?
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Show Hint 3</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            The second train of thought is, without changing the array, can we
+            use additional space somehow? Like maybe a hash map to speed up the
+            search?
+          </p>
+        </mat-expansion-panel>
+      </mat-card-footer>
+    </mat-card>
+  </div>
 
-<footer class="footer-problems" fxLayout>
-  <div fxFlex>
-    <button mat-raised-button style="color: gray">
-      <mat-icon>list</mat-icon> Problems
-    </button>
-  </div>
-  <div fxFlexAlign="flex-end">
-    <button mat-raised-button style="color: gray">
-      <mat-icon>shuffle</mat-icon> Pick One
-    </button>
-    <button mat-button disabled>Prev</button>
-    <button mat-button>1/2077</button>
-    <button mat-button>Next</button>
-  </div>
-</footer>
+  <footer class="footer-problems" fxLayout>
+    <div fxFlex>
+      <button mat-raised-button style="color: gray">
+        <mat-icon>list</mat-icon> Problems
+      </button>
+    </div>
+    <div fxFlex="180px"></div>
+    <div fxFlexAlign="flex-end">
+      <button mat-raised-button style="color: gray">
+        <mat-icon>shuffle</mat-icon> Pick One
+      </button>
+      <button mat-button disabled>Prev</button>
+      <button mat-button>1/2077</button>
+      <button mat-button>Next</button>
+    </div>
+  </footer>
+</div>

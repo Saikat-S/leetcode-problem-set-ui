@@ -1,7 +1,25 @@
-.filter {
-  padding: 10px 0 0 75px;
-  width: 100%;
+a {
+  text-decoration: none;
+  color: black;
 }
-.table-info {
+a:hover {
+  color: blue;
+}
+
+.filter {
+  width: 100%;
+  padding: 10px 0 0 75px;
+}
+
+.filter-box {
+  max-width: 100px;
+  box-sizing: border-box;
+}
+
+mat-table {
+  overflow-x: scroll;
+  min-width: 1000px;
+  display: block;
+  box-sizing: border-box;
   padding: 10px 75px 10px 75px;
 }

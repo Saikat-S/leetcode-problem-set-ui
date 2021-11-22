@@ -10,6 +10,7 @@ import { ProblemSetComponent } from './content/problem-set/problem-set.component
 import { ProblemsComponent } from './problems/problems.component';
 import { ProblemDetailsComponent } from './problems/problem-details/problem-details.component';
 import { EditorComponent } from './problems/editor/editor.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EditorComponent } from './problems/editor/editor.component';
     ProblemSetComponent,
     ProblemsComponent,
     ProblemDetailsComponent,
-    EditorComponent
+    EditorComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,

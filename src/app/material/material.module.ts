@@ -13,6 +13,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list'
 
 const material = [
   MatButtonModule,
@@ -28,7 +30,9 @@ const material = [
   MatInputModule,
   MatCardModule,
   ScrollingModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatSidenavModule,
+  MatListModule
 ]
 
 @NgModule({

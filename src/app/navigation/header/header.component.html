@@ -1,20 +1,19 @@
 <mat-toolbar>
   <div fxFlex fxLayout>
-    <div></div>
+    <div fxHide.gt-xs>
+      <button mat-icon-button (click)="onToggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div>
+      <a>
+        <button mat-icon-button><mat-icon>opacity</mat-icon></button>
+      </a>
+    </div>
     <div fxFlex fxLayout fxLayoutAlign="flex-start" fxHide.xs>
       <ul fxLayout fxLayoutGap="10px" class="navigation-items">
-        <li class="logo-img">
-          <a>
-            <!-- <img
-              src="https://leetcode.com/_next/static/images/logo-ff2b712834cf26bf50a5de58ee27bcef.png"
-              alt="logo"
-              style="width: 18px; height: 23px"
-            /> -->
-            <button mat-icon-button><mat-icon>opacity</mat-icon></button>
-          </a>
-        </li>
         <li><a>Explore</a></li>
-        <li><a>Problems</a></li>
+        <li><a routerLink="">Problems</a></li>
         <li><a>Contest</a></li>
         <li><a>Discuss</a></li>
         <li>
@@ -29,7 +28,7 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div fxLayouy fxHide.xs>
       <ul fxLayout fxLayoutGap="10px" class="navigation-items">
         <li><a style="color: orange">Premium</a></li>
         <li>

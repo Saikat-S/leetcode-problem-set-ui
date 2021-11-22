@@ -17,6 +17,9 @@ mat-form-field {
   background-color: #ffffff;
 }
 .footer-editor {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
   color: gray;
   padding: 10px;
 }

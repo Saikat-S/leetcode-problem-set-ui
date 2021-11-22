@@ -1,51 +1,56 @@
-<div fxLayoutGap="10px" class="filter">
-  <mat-form-field fxFlex="12%">
-    <mat-label>Lists</mat-label>
-    <mat-select>
-      <mat-option value="list-1"> LeetCode Curated Algo 170</mat-option>
-      <mat-option value="list-2">LeetCode Curated SQL 70</mat-option>
-      <mat-option value="list-3"> Top 100 Liked Questions</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Difficulty</mat-label>
-    <mat-select>
-      <mat-option value="easy"> Easy </mat-option>
-      <mat-option value="easy"> Medium </mat-option>
-      <mat-option value="easy"> Hard </mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-form-field>
-    <mat-label>Status</mat-label>
-    <mat-select>
-      <mat-option value="todo"> ToDo </mat-option>
-      <mat-option value="solved"> Solved </mat-option>
-      <mat-option value="attempted"> Attempted </mat-option>
-    </mat-select>
-  </mat-form-field>
+<div fxLayout class="filter">
+  <div fxLayoutGap="20px">
+    <mat-form-field class="filter-box">
+      <mat-label>Lists</mat-label>
+      <mat-select>
+        <mat-option value="list-1"> LeetCode Curated Algo 170</mat-option>
+        <mat-option value="list-2">LeetCode Curated SQL 70</mat-option>
+        <mat-option value="list-3"> Top 100 Liked Questions</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="filter-box">
+      <mat-label>Difficulty</mat-label>
+      <mat-select>
+        <mat-option value="easy"> Easy </mat-option>
+        <mat-option value="easy"> Medium </mat-option>
+        <mat-option value="easy"> Hard </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="filter-box">
+      <mat-label>Status</mat-label>
+      <mat-select>
+        <mat-option value="todo"> ToDo </mat-option>
+        <mat-option value="solved"> Solved </mat-option>
+        <mat-option value="attempted"> Attempted </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="filter-box">
+      <mat-label>Tag</mat-label>
+      <mat-select multiple>
+        <mat-option value="array"> Array </mat-option>
+        <mat-option value="string"> String </mat-option>
+        <mat-option value="tree"> Tree </mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Tag</mat-label>
-    <mat-select multiple>
-      <mat-option value="array"> Array </mat-option>
-      <mat-option value="string"> String </mat-option>
-      <mat-option value="tree"> Tree </mat-option>
-    </mat-select>
-  </mat-form-field>
-
-  <mat-form-field floatLabel="never">
-    <input
-      matInput
-      type="text"
-      (keyup)="doFilter($event)"
-      placeholder="Search questions"
-    />
-    <span style="color: gray" matPrefix><mat-icon>search</mat-icon></span>
-  </mat-form-field>
-  <button mat-icon-button><mat-icon>settings</mat-icon></button>
-  <button mat-icon-button>
-    <mat-icon>shuffle</mat-icon> <span style="color: blue"> Pick One</span>
-  </button>
+    <mat-form-field fxFlex="100" class="filter-box" floatLabel="never">
+      <input
+        matInput
+        type="text"
+        (keyup)="doFilter($event)"
+        placeholder="Search questions"
+      />
+      <span style="color: gray" matPrefix><mat-icon>search</mat-icon></span>
+    </mat-form-field>
+    <button mat-icon-button class="filter-box">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <div>
+      <button mat-icon-button>
+        <mat-icon>shuffle</mat-icon> <span style="color: blue"> Pick One</span>
+      </button>
+    </div>
+  </div>
 </div>
 
 <div class="table-info">
@@ -59,7 +64,9 @@
     <ng-container matColumnDef="problem_id">
       <mat-header-cell *matHeaderCellDef mat-sort-header>Title</mat-header-cell>
       <mat-cell *matCellDef="let element">
-        {{ element.problem_id }} {{ element.title }}
+        <a routerLink="problems">
+          {{ element.problem_id }} {{ element.title }}
+        </a>
       </mat-cell>
     </ng-container>
     <!-- Solution Column -->
@@ -96,6 +103,6 @@
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
   </mat-table>
-  <mat-paginator [pageSize]="1" [pageSizeOptions]="[1, 5, 10, 20]">
+  <mat-paginator [pageSize]="5" [pageSizeOptions]="[1, 5, 10, 20]">
   </mat-paginator>
 </div>
