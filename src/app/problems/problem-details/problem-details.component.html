@@ -30,6 +30,13 @@
       </li>
     </ul>
   </nav>
+  <div fxLayout="row" fxLayoutAlign="center center" fxShow.gt-sm fxHide.gt-sm>
+    <div class="submit-button">
+      <button mat-raised-button style="color: gray">
+        <mat-icon>shuffle</mat-icon> Pick One
+      </button>
+    </div>
+  </div>
   <div class="problem-details">
     <mat-card class="example-card">
       <mat-card-title>1. Two Sum</mat-card-title>
@@ -173,7 +180,7 @@
     </mat-card>
   </div>
 
-  <footer class="footer-problems" fxLayout>
+  <footer class="footer-problems" fxLayout fxHide.lt-sm>
     <div fxFlex>
       <button mat-raised-button style="color: gray">
         <mat-icon>list</mat-icon> Problems

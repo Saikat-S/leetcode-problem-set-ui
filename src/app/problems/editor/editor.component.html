@@ -1,4 +1,4 @@
-<div class="editor-top" fxLayout>
+<div class="editor-top" fxLayout fxLayout fxHide.lt-sm>
   <mat-form-field>
     <mat-select value="C++">
       <mat-option *ngFor="let language of languages" [value]="language">
@@ -14,6 +14,30 @@
   <button mat-icon-button><mat-icon>settings</mat-icon></button>
   <button mat-icon-button><mat-icon>fullscreen</mat-icon></button>
 </div>
+
+<div
+  class="editor-top-sm"
+  fxLayout="row"
+  fxLayoutAlign="space-between center"
+  fxShow.lt-sm
+  fxHide.gt-sm
+>
+  <div>
+    <mat-form-field>
+      <mat-select value="C++">
+        <mat-option *ngFor="let language of languages" [value]="language">
+          {{ language }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div>
+    <button mat-icon-button><mat-icon>description</mat-icon></button>
+    <button mat-icon-button><mat-icon>replay</mat-icon></button>
+    <button mat-icon-button><mat-icon>settings</mat-icon></button>
+  </div>
+</div>
+
 <div>
   <textarea
     matInput
@@ -26,7 +50,7 @@
     };"
   ></textarea>
 </div>
-<footer class="footer-editor" fxLayout>
+<footer class="footer-editor" fxLayout fxHide.lt-sm>
   <div fxFlex>
     <button mat-button>Console <mat-icon>arrow_drop_down</mat-icon></button>
     <button mat-button>Contribute <i>i</i></button>
@@ -37,6 +61,13 @@
       <mat-icon>arrow_right</mat-icon> Run Code
       <mat-icon style="font-size: 20px">expand_less</mat-icon>
     </button>
+    <button mat-raised-button style="background-color: #455a64; color: white">
+      Submit
+    </button>
+  </div>
+</footer>
+<footer fxLayout="row" fxLayoutAlign="end center" fxShow.gt-sm fxHide.gt-sm>
+  <div class="submit-button">
     <button mat-raised-button style="background-color: #455a64; color: white">
       Submit
     </button>

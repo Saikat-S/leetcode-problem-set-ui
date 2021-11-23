@@ -10,6 +10,9 @@ mat-form-field {
 .editor-top {
   color: rgb(97, 96, 96, 0.41);
 }
+.editor-top-sm {
+  padding-top: 10px;
+}
 
 .editor {
   width: 100%;
@@ -22,4 +25,7 @@ mat-form-field {
   bottom: 0;
   color: gray;
   padding: 10px;
+}
+.submit-button {
+  padding: 20px;
 }
