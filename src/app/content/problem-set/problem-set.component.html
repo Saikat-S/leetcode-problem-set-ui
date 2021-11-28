@@ -25,6 +25,8 @@
           <mat-option value="attempted"> Attempted </mat-option>
         </mat-select>
       </mat-form-field>
+    </div>
+    <div>
       <mat-form-field class="filter-box">
         <mat-label>Tag</mat-label>
         <mat-select multiple>
@@ -34,7 +36,11 @@
         </mat-select>
       </mat-form-field>
 
-      <mat-form-field fxFlex="100" class="filter-box" floatLabel="never">
+      <mat-form-field
+        style="min-width: 150px"
+        class="filter-box"
+        floatLabel="never"
+      >
         <input
           matInput
           type="text"
@@ -46,8 +52,6 @@
       <button mat-icon-button class="filter-box">
         <mat-icon>settings</mat-icon>
       </button>
-    </div>
-    <div fxFlex>
       <button mat-icon-button>
         <mat-icon>shuffle</mat-icon> <span style="color: blue"> Pick One</span>
       </button>

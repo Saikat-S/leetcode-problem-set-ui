@@ -7,13 +7,12 @@ a:hover {
 }
 
 .filter {
-  width: 100%;
   padding: 10px 0 0 75px;
 }
 
 .filter-box {
   max-width: 100px;
-  align-items: flex-start;
+  box-sizing: border-box;
 }
 
 .table-info {
@@ -21,6 +20,6 @@ a:hover {
 }
 
 mat-table {
-  overflow-x: scroll;
+  overflow-x: auto;
   min-width: 650px;
 }
