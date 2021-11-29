@@ -66,3 +66,9 @@ mat-panel-title:hover {
   color: gray;
   padding: 10px;
 }
+
+@media (max-width: 600px) {
+  .problem-details {
+    height: 100%;
+  }
+}

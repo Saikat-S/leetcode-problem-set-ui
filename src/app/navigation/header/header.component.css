@@ -24,3 +24,12 @@ mat-toolbar {
 .logo-img {
   padding-right: 15px;
 }
+
+@media (max-width: 600px) {
+  .header-icon {
+    padding-left: 36%;
+  }
+  mat-toolbar {
+    padding: 0 20px 0 20px;
+  }
+}
