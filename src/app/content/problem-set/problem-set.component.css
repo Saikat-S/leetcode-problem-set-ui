@@ -22,6 +22,9 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
   .filter {
     padding: 10px 0 0 30px;
   }
@@ -29,9 +32,12 @@ a:hover {
     min-width: 700px;
   }
   .table-info {
+    width: 100%;
+    padding: 0 0 0 5px;
+  }
+  .mat-table-info {
     overflow-x: scroll;
     max-width: 450px;
-    padding: 0 10px 0 5px;
   }
   .filter-box {
     max-width: 150px;
