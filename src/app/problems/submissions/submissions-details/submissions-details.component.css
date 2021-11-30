@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+.navigation-items {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.table-info {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.footer-problems {
+  position: fixed;
+  left: 0;
+  bottom: 5px;
+  color: gray;
+  padding: 10px;
+}

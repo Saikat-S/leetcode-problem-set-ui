@@ -1,0 +1,136 @@
+<nav class="nav-bar">
+  <ul fxLayout fxLayoutGap="50px" class="navigation-items">
+    <li>
+      <a routerLink="/problems" style="cursor: pointer"
+        ><mat-icon style="font-size: small">description</mat-icon>
+        Description</a
+      >
+    </li>
+    <li>
+      <a routerLink="/solution" style="cursor: pointer"
+        ><mat-icon style="font-size: small; color: rgb(204, 167, 102)">
+          lock</mat-icon
+        >
+        Solution
+        <mat-icon style="font-size: small">play_circle_outline</mat-icon></a
+      >
+    </li>
+    <li>
+      <a routerLink="/discuss" style="cursor: pointer"
+        ><mat-icon style="font-size: small">question_answer</mat-icon>
+        Discuss</a
+      >
+    </li>
+    <li>
+      <a routerLink="/submissions" style="cursor: pointer"
+        ><mat-icon style="font-size: small">query_builder</mat-icon>
+        Submissions</a
+      >
+    </li>
+  </ul>
+</nav>
+<div class="solution-details">
+  <div><h1>Solution Article</h1></div>
+  <div>
+    <h2>Approach 1: Brute Force</h2>
+    <h3>Algorithm</h3>
+    <p>
+      The brute force approach is simple. Loop through each element xx and find
+      if there is another value that equals to target - x.
+    </p>
+    <h3>Implementation</h3>
+    <div class="code-editor">
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div>
+          <button mat-button>C++</button>
+          <button mat-button>Python</button>
+        </div>
+        <div>
+          <button mat-button>Copy</button>
+        </div>
+      </div>
+      <textarea
+        matInput
+        class="editor"
+        value="class Solution {
+            public int[] twoSum(int[] nums, int target) {
+                for (int i = 0; i < nums.length; i++) {
+                    for (int j = i + 1; j < nums.length; j++) {
+                        if (nums[j] == target - nums[i]) {
+                            return new int[] { i, j };
+                        }
+                    }
+                }
+                // In case there is no solution, we'll just return null
+                return null;
+            }
+        }"
+      ></textarea>
+    </div>
+    <h3>Complexity Analysis</h3>
+    <ul>
+      <li>
+        Time complexity: O(n^2). For each element, we try to find its complement
+        by looping through the rest of the array which takes O(n) time.
+        Therefore, the time complexity is O(n^2).
+      </li>
+      <li>
+        Space complexity: O(1). The space required does not depend on the size
+        of the input array, so only constant space is used.
+      </li>
+    </ul>
+  </div>
+  <a style="cursor: pointer; text-decoration: underline">
+    <span style="color: gray">Report Article Issue</span></a
+  >
+
+  <div class="comment">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div>
+        <span>Comments: 1767</span>
+        <button mat-icon-button>
+          <mat-icon style="font-size: medium">notifications_none</mat-icon>
+        </button>
+      </div>
+      <div>
+        <button mat-button>Best</button>
+        <button mat-button>Most Votes</button>
+        <button mat-button>Newest to Oldest</button>
+        <button mat-button>Oldest to Newest</button>
+      </div>
+    </div>
+    <div>
+      <textarea
+        matInput
+        class="comment-textbox"
+        value=""
+        placeholder="Type your comment"
+      ></textarea>
+      <div fxLayoutAlign="end center" style="padding: 5px 25px 0 0">
+        <button mat-raised-button>Post</button>
+      </div>
+    </div>
+    <div class="comments-list">
+      <h3>freeNeasy 902 Last Edit: September 27, 2018 8:24 PM</h3>
+      <p>My first leetcode,keep going.</p>
+      <p>901 Show 29 replies Reply Share Report</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-solution" fxLayout fxHide.lt-sm>
+  <div fxFlex>
+    <button mat-raised-button style="color: gray">
+      <mat-icon>list</mat-icon> Problems
+    </button>
+  </div>
+  <div fxFlex="180px"></div>
+  <div fxFlexAlign="flex-end">
+    <button mat-raised-button style="color: gray">
+      <mat-icon>shuffle</mat-icon> Pick One
+    </button>
+    <button mat-button disabled>Prev</button>
+    <button mat-button>1/2077</button>
+    <button mat-button>Next</button>
+  </div>
+</footer>

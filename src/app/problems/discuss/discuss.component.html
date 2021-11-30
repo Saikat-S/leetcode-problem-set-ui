@@ -1,13 +1,13 @@
 <nav class="nav-bar">
   <ul fxLayout fxLayoutGap="50px" class="navigation-items">
     <li>
-      <a style="cursor: pointer"
+      <a routerLink="/problems" style="cursor: pointer"
         ><mat-icon style="font-size: small">description</mat-icon>
         Description</a
       >
     </li>
     <li>
-      <a style="cursor: pointer"
+      <a routerLink="/solution" style="cursor: pointer"
         ><mat-icon style="font-size: small; color: rgb(204, 167, 102)">
           lock</mat-icon
         >
@@ -16,13 +16,13 @@
       >
     </li>
     <li>
-      <a style="cursor: pointer"
+      <a routerLink="discuss" style="cursor: pointer"
         ><mat-icon style="font-size: small">question_answer</mat-icon>
         Discuss</a
       >
     </li>
     <li>
-      <a style="cursor: pointer"
+      <a routerLink="/submissions" style="cursor: pointer"
         ><mat-icon style="font-size: small">query_builder</mat-icon>
         Submissions</a
       >
@@ -33,7 +33,7 @@
   <div class="discuss-details">
     <div class="discuss-title">
       <div>
-        <h1>1. Two Sum</h1>
+        <h2>1. Two Sum</h2>
       </div>
       <div xLayout="row" fxLayoutAlign="space-between center">
         <div>
@@ -113,7 +113,7 @@
     </div>
   </div>
   <div class="discuss-tag">
-    <div><h3>Tags</h3></div>
+    <div><h1>Tags</h1></div>
     <div>
       <mat-form-field style="min-width: 150px" floatLabel="never">
         <input

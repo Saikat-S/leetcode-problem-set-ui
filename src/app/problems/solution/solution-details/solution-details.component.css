@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+.navigation-items {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.solution-details {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  height: 500px;
+  width: 97%;
+  padding: 0 10px 0 0;
+  box-sizing: border-box;
+}
+
+.code-editor {
+  background-color: #ece6e6;
+}
+
+.editor {
+  border: solid 1px lightgrey;
+  padding: 5px;
+  width: 95%;
+  height: 260px;
+  background-color: #fff;
+}
+.comment {
+  width: 700px;
+}
+.comment-textbox {
+  border: solid 1px lightgray;
+  height: 50px;
+  width: 95%;
+  padding: 5px;
+}
+
+.comments-list {
+  padding: 20px;
+}
+
+.footer-solution {
+  position: fixed;
+  left: 0;
+  bottom: 5px;
+  color: gray;
+  padding: 10px;
+}

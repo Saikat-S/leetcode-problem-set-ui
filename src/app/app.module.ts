@@ -12,6 +12,10 @@ import { ProblemDetailsComponent } from './problems/problem-details/problem-deta
 import { EditorComponent } from './problems/editor/editor.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { DiscussComponent } from './problems/discuss/discuss.component';
+import { SubmissionsComponent } from './problems/submissions/submissions.component';
+import { SubmissionsDetailsComponent } from './problems/submissions/submissions-details/submissions-details.component';
+import { SolutionComponent } from './problems/solution/solution.component';
+import { SolutionDetailsComponent } from './problems/solution/solution-details/solution-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { DiscussComponent } from './problems/discuss/discuss.component';
     ProblemDetailsComponent,
     EditorComponent,
     SidenavListComponent,
-    DiscussComponent
+    DiscussComponent,
+    SubmissionsComponent,
+    SubmissionsDetailsComponent,
+    SolutionComponent,
+    SolutionDetailsComponent
   ],
   imports: [
     BrowserModule,
