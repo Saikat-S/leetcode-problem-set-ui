@@ -11,6 +11,7 @@ import { ProblemsComponent } from './problems/problems.component';
 import { ProblemDetailsComponent } from './problems/problem-details/problem-details.component';
 import { EditorComponent } from './problems/editor/editor.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { DiscussComponent } from './problems/discuss/discuss.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     ProblemsComponent,
     ProblemDetailsComponent,
     EditorComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    DiscussComponent
   ],
   imports: [
     BrowserModule,

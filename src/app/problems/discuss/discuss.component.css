@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+.nav-bar {
+  padding: 0 0 0 50px;
+}
+.navigation-items {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+.discuss {
+  padding: 0 10px 0 25px;
+}
+.discuss-details {
+  width: 70%;
+  box-sizing: border-box;
+}
+.discuss-tag {
+  box-sizing: border-box;
+  width: 30%;
+  text-align: center;
+}
